@@ -56,7 +56,7 @@ if st.button("Calculate"):
         result = calculate_simplify_model(Bw, Cre, NonExcisedKidney, Male)
         st.success(f"Your predicted creatinine value after 1 year of kidney donation is as follows (in mg/dL): {result:.2f}")
     except Exception as e:
-        st.error(f"An error occurred: \{e\}")
+        st.error(f"An error occurred: {e}")
 
 # Notes
         st.write("""
