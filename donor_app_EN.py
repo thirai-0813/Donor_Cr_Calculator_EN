@@ -54,7 +54,7 @@ Male = st.selectbox("Male (1 for Male, 0 for Female)", options=[1, 0])
 if st.button("Calculate"):
     try:
         result = calculate_simplify_model(Bw, Cre, NonExcisedKidney, Male)
-        st.success(f"Your predicted creatinine value after 1 year of kidney donation is as follows (in mg/dL): {result;.2f}")
+        st.success(f"Your predicted creatinine value after 1 year of kidney donation is as follows (in mg/dL): {result:.2f}")
     except Exception as e:
         st.error(f"An error occurred: \{e\}")
 
