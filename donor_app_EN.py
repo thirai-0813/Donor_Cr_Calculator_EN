@@ -54,7 +54,7 @@ if st.button("Calculate"):
         st.error(f"An error occurred: {e}")
 
 # Notes
-        st.write("""
-        **This result is calculated based on data from patients who actually donated a kidney at the Department of Urology, Tokyo Women's Medical University.
-        Please note that the actual measured values may differ. **
-        """)
+st.write("""
+**This result is calculated based on data from patients who actually donated a kidney at the Department of Urology, Tokyo Women's Medical University.
+Please note that the actual measured values may differ.**
+""")
