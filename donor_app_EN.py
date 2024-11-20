@@ -63,6 +63,3 @@ if st.button("Calculate"):
         **This result is calculated based on data from patients who actually donated a kidney at the Department of Urology, Tokyo Women's Medical University.
         Please note that the actual measured values may differ. **
         """)
-
-        
-}
