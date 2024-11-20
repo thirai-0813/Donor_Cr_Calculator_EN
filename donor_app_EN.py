@@ -17,8 +17,8 @@ st.markdown("""
 
 # Input
 st.write("Please enter the following parameters:")
-Bw = st.number_input("Body Weight (Bw)", min_value=0.0, step=0.1)
-Cre = st.number_input("Creatinine (Cre)", min_value=0.0, step=0.01)
+Bw = st.number_input("Body Weight (Bw)", min_value=0.0, step=1.0)
+Cre = st.number_input("Creatinine (Cre)", min_value=0.0, step=0.1)
 NonExcisedKidney = st.number_input("Non-Excised Kidney Volume", min_value=0.0, step=0.1)
 Male = st.selectbox("Male (1 for Male, 0 for Female)", options=[1, 0])
 
@@ -44,11 +44,6 @@ def calculate_simplify_model(Bw, Cre, NonExcisedKidney, Male, Age=50):
     simplify_model = np.median([model_1, model_2, model_3, model_4, model_5, model_6, model_7, model_8, model_9], axis=0)
     return simplify_model
 
-# Input fields
-Bw = st.number_input("Body Weight (Bw)", min_value=0.0, step=0.1)
-Cre = st.number_input("Creatinine (Cre)", min_value=0.0, step=0.01)
-NonExcisedKidney = st.number_input("Non-Excised Kidney Volume", min_value=0.0, step=0.1)
-Male = st.selectbox("Male (1 for Male, 0 for Female)", options=[1, 0])
 
 # Calculate button
 if st.button("Calculate"):
